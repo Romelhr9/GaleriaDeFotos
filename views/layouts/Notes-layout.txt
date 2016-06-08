@@ -1,0 +1,18 @@
+Acts as the wrapper for the consistent parts of the website on 
+every page.
+
+So far we’ve created two specific views for our website, one for the 
+home page and one for the details of an image. However, there’s no 
+consistent UI wrapping both of these pages together. We have no 
+consistent navigation or logo. There’s no common footer with
+standard copyright or additional information.
+
+Usually, with any website that you create, you’re going to want to 
+have some form of a standard layout or master template that every 
+page will use. This layout typically includes the website logo and 
+title, main navigation, sidebar (if any), and the footer. It would be
+bad practice to include the HTML code for the layout in every single 
+page on our website because if we wanted to make even the smallest 
+change to the main layout, we would have to edit every single page as 
+a result. Fortunately, Handlebars helps lessen the work of
+utilizing a layout file.

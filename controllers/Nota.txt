@@ -1,0 +1,27 @@
+A controller is nothing more than an object that contains similar logic and 
+functionality within our application. In our project, a controller is tied 
+directly via its functions to a corresponding route. For every route that we 
+create in our router, two parameters are necessary. The first parameter is the
+string for the route itself, that is  /images/:image_id.
+
+The second parameter is a controller function that will be executed when that 
+route is accessed. For any route that has to do with images, we rely on the 
+images controller. Likewise, any route that has to do with the home page relies 
+on the home controller, and so on and so forth.
+
+The steps we will take to define our controllers in our app are purely 
+organizational and based on a personal preference. We created our controllers as 
+modules so that our router wasn’t a big, long convoluted mess of spaghetti code! 
+We could have just as easily kept all of the logic contained in our controllers 
+as functions directly within the routes themselves, but this would have been an 
+organizational mess and made for very hard-to-read code.
+
+A view model, in the sense of how we are using one, is typically just a single 
+JavaScript object (or collection of objects in an array) that can be passed to 
+the template-rendering engine that contains all of the necessary data we need to 
+properly render the page. The view model for a page will typically contain all of 
+the data necessary to render the content-specific portions of that page. Using 
+our application as an example, the view model for a specific image’s page may 
+contain the title of the image, its description, and the information necessary to 
+display the image and various stats such as the number of likes, views, and a 
+collection of comments. A view model can be as simple or as complex as you like.

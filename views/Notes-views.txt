@@ -1,0 +1,16 @@
+
+The HTML in the following section relies heavily on Bootstrap, a 
+popular HTML framework created by Twitter that provides a standard set
+of user interface elements. These include buttons, fonts, layout 
+grids, color schemes, and a whole lot more. Using Bootstrap allows us 
+to not only present our application with a nice clean UI, but also 
+build it so that it is responsive and will look correct on any device 
+that is viewing it.
+
+Parece que cada pagina inlcuye lo que esta en layouts segun se le 
+informo a configure.js
+
+app.engine('handlebars', exphbs.create({  // params: file extension, create to build the engine
+        defaultLayout: 'main',
+        layoutsDir: app.get('views') + '/layouts',   // views defined in server.js
+        partialsDir: [app.get('views') + '/partials'], /

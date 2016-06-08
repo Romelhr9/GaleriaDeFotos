@@ -1,0 +1,22 @@
+Are really just small views that we can reuse and inject inside our 
+layouts or views.
+
+Partials are a terrific way to create reusable components in your 
+website and reduce code duplication. Consider the comments in our 
+application. 
+
+We have an HTML form defined that a user uses to submit 
+a comment, but what if we wanted to allow users to post comments from 
+a number of different areas throughout the website.
+
+This type of scenario is a great candidate for moving our comment 
+form out to its own partial and then just including that partial 
+anywhere we want to display the comment form.
+
+For this app, we’re using partials specifically for the sidebar in 
+the main layout. With every view’s ViewModel, we will include a 
+JavaScript object called  sidebar that will contain the data 
+specifically for the stats, popular images, and recent comments 
+found within the sidebar partial.
+
+Let’s create the HTML for each of the partials. 
